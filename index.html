@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Inteligente</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <main class="container">
+
+        <div class="data-extenso">
+            <span id="data-extenso">--</span>
+        </div>
+        
+        <div class="relogio">
+            <span id="horas">00</span>
+            <span id="minutos">00</span>
+            <span id="segundos">00</span>
+        </div>
+
+        <div class="data-numerica">
+            <span id="dia-numerico">00</span>
+            <span id="mes-numerico">00</span>
+            <span id="ano-numerico">0000</span>
+        </div>
+
+        <div class="seletor-tema">
+            <div class="opcoes-tema">
+                <input type="radio" id="modo-claro" name="tema" value="claro">
+                <label for="modo-claro">Claro ☀️</label>
+                
+                <input type="radio" id="modo-escuro" name="tema" value="escuro">
+                <label for="modo-escuro">Escuro 🌙</label>
+                
+                <input type="radio" id="modo-automatico" name="tema" value="auto" checked>
+                <label for="modo-automatico">Automático ⚙️</label>
+            </div>
+            <div class="config-auto">
+                <label for="hora-escuro">Escurecer às:</label>
+                <input type="time" id="hora-escuro" value="16:00">
+                
+                <label for="hora-claro">Clarear às:</label>
+                <input type="time" id="hora-claro" value="06:00">
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
