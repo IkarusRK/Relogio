@@ -104,3 +104,8 @@ function atualizarRelogioEData() {
         aplicarTema();
     }
 }
+
+carregarConfig(); 
+aplicarTema();   
+setInterval(atualizarRelogioEData, 1000); 
+atualizarRelogioEData();
